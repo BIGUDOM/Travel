@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" class="sbb-focus-modality-mouse">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="version" content="11.0.0">
+
+    <title>Comporch Travel & Tours LLC</title>
+    <meta name="description" content="Half Fare &amp; GA Travelcards, tickets, excursions, city breaks, event tickets &amp; information on stations, disruptions &amp; the timetable.">
+
+    <link rel="canonical" href="https://www.sbb.ch/en">
+    <link rel="alternate" hreflang="de" href="https://www.sbb.ch/de">
+    <link rel="alternate" hreflang="en" href="https://www.sbb.ch/en">
+    <link rel="alternate" hreflang="fr" href="https://www.sbb.ch/fr">
+    <link rel="alternate" hreflang="it" href="https://www.sbb.ch/it">
+    <link rel="alternate" hreflang="x-default" href="https://www.sbb.ch/de">
+    <link rel="icon" type="image/svg+xml" href="static/media/logo.png">
+
+    <meta property="og:title" content="The SBB online portal for timetable, trains and public transport">
+    <meta property="og:description" content="Half Fare &amp; GA Travelcards, tickets, excursions, city breaks, event tickets &amp; information on stations, disruptions &amp; the timetable.">
+    <meta property="og:site_name" content="The SBB online portal for timetable, trains and public transport">
+    <meta property="og:locale" content="en">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="The SBB online portal for timetable, trains and public transport">
+    <meta name="twitter:description" content="Half Fare &amp; GA Travelcards, tickets, excursions, city breaks, event tickets &amp; information on stations, disruptions &amp; the timetable.">
+
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="https://cdn.app.sbb.ch/favicons/sbb/v2/apple-touch-icon.png">
+
+    <!-- Fonts -->
+    <link rel="preload" href="https://cdn.app.sbb.ch/fonts/v1_9_subset/SBBWeb-Roman.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://cdn.app.sbb.ch/fonts/v1_9_subset/SBBWeb-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="https://cdn.app.sbb.ch/fonts/v1_9_subset/SBBWeb-Light.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+          integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer">
+
+    <!-- OneTrust Cookie Consent -->
+    <script src="https://cdn.cookielaw.org/consent/b25bc602-c497-4160-8d7a-f89396557307/OtAutoBlock.js"></script>
+    <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js"
+            charset="UTF-8"
+            data-domain-script="b25bc602-c497-4160-8d7a-f89396557307"></script>
+    <script>
+        function OptanonWrapper() {}
+    </script>
+
+    <!-- New Relic -->
+    <script src="https://js-agent.newrelic.com/nr-loader-spa-current.min.js" crossorigin="anonymous"></script>
+
+    <!-- Stylesheet -->
+     <link rel="Stylesheet" href="static/css/style.css">
+</head>
+
+    <body>
+
+<header>
+    <button class="menu-toggle" id="menuToggle" type="button">
+        <i class="fa-solid fa-bars"></i>  
+        <span>Menu</span>
+    </button>
+
+    <div class="header-right">
+        <div class="header-actions">
+            <button class="icon-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span>Search</span>
+            </button>
+
+            <button class="icon-btn">
+                <i class="fa-regular fa-user"></i>
+                <span>Sign In</span>
+            </button>
+
+            <button class="icon-btn">
+                <i class="fa-solid fa-globe"></i>
+                <span>English</span>
+            </button>
+        </div>
+
+        <div class="logo">
+            <img src="static/media/logo.png" alt="Comporch Travel & Tours LLC logo">
+            <span>Comporch Travel & Tours LLC</span>
+        </div>
+    </div>
+
+
+</header>
+
+<main>
+    <div class="content">
+        <div class="random"></div>
+
+        <div class="from-to-container">
+
+            <div class="location-line">
+                <svg width="64" height="100" viewBox="0 0 24 48" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="6" r="4" stroke="black" fill="transparent" stroke-width="0.5"/><circle cx="12" cy="42" r="4" stroke="black" fill="transparent" stroke-width="0.5"/><line x1="12" y1="10" x2="12" y2="38" stroke="black" stroke-width="0.5"/></svg>
+            </div>
+            <div class="from-to">
+                <div class="from-field">
+
+                    <div class="field-header">
+                        <label for="from">From</label>
+
+                        <button type="button" class="cancel-btn" aria-label="Cancel">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+
+                    <input
+                        type="text"
+                        id="from"
+                        name="from"
+                        autocomplete="off"
+                    >
+
+                </div>
+
+
+                <div class="to-field">
+                    <div class="field-header">     
+                        <label for="to">To</label>
+                        <button type="button" class="cancel-btn" aria-label="Cancel">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+
+                    </div>
+                    <input type="text" id="to" name="to" autocomplete="off">
+                </div>
+            </div>
+
+            <button class="swap">
+                <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/swap.png" alt="swap"/>
+            </button>
+
+
+        </div>
+    </div>
+
+  
+
+    <div class="content1">
+        <a href="#" class="first">
+        <span class="i-with-circle">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="16" x2="12" y2="12"></line>
+                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+        </span> 
+        Current service sitution  
+        <i class="fa-solid fa-angle-right"></i>
+    </a>
+    </div>
+
+    <div class="offers">
+        <div class="top-offers">
+            <h1>Top offers.</h1>
+            <div class="flex">
+                <div class="flex-1">
+                    <div class="items">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" viewBox="0 0 36 36"><path fill="#000" fill-rule="evenodd" d="M3.75 6.25h-.5v22h29.5v-7h-.5c-2.274 0-4-1.727-4-4 0-2.274 1.726-4 4-4h.5v-7h-29m.5 21v-20h27.5v5.023c-2.578.239-4.5 2.32-4.5 4.977s1.922 4.737 4.5 4.977v5.023zm2.5-16.5h-.5v14.462l.499.002 15 .036h.501v-14.5h-3V9h-1v1.75h-8V9h-1v1.75zm.5 13.465V14.75h14v9.498zm14-10.465h-14v-2h14zm-7.5 5.5H12v-1h1.75V16.5h1v6h-1zM24.25 7.5v.487h1V7.5zm0 1.462v.975h1v-.975zm0 1.95v.975h1v-.975zm0 1.95v.975h1v-.975zm0 1.95v.975h1v-.975zm0 1.95v.975h1v-.975zm0 1.95v.975h1v-.975zm0 1.95v.975h1v-.975zm0 1.95v.975h1v-.975zm0 1.95v.975h1v-.975zm0 1.95V27h1v-.488z" clip-rule="evenodd"/></svg>
+                        <div class="text">
+                            <h2>Leisure Pass</h2>
+                            <p>Unlimited travel on 10 days of your choice for just CHF 450.</p>
+                        </div>
+                        <button class="buy-btn">Buy</button>
+                    </div>
+                    <div class="items">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" viewBox="0 0 36 36"><path fill="#000" fill-rule="evenodd" d="M15.75 4.75h-.5v3h-9v23.5h14.5v-3h9V4.75h-14m4.5 3h-4v-2h12.5v21.5h-8v-6.5H27v-1h-6.25v-2H27v-1h-6.25v-9zm-.5 20v2.5H7.25V8.75h12.5zm7.212-20.353v6.104h-1.218V9.505h-1.439V8.62q.449-.011.73-.092.282-.08.517-.258.338-.261.453-.873zm-8.978 8.017V16.5h-4.396q0-.497.162-.948.16-.45.453-.777.224-.25.528-.487.301-.24 1.203-.873.44-.306.613-.569a1.06 1.06 0 0 0 .177-.609q0-.4-.237-.65a.82.82 0 0 0-.62-.247q-.943 0-.973 1.356h-1.171v-.133q0-1.111.62-1.72.606-.593 1.567-.593.852 0 1.423.484.621.526.621 1.416 0 .775-.496 1.335-.162.184-.305.294-.141.111-.747.533-.575.401-.825.613a3.3 3.3 0 0 0-.46.49zM18 20.75H9v-1h9zm-9 3h9v-1H9z" clip-rule="evenodd"/></svg>
+                        <div class="text">
+                            <h2>Swiss Travel Pass</h2>
+                            <p>One simple pass for train, bus and boat travel in Switzerland.</p>
+                        </div>
+                        <button  class="buy-btn">Buy</button>
+                    </div>
+                    <div class="items">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" viewBox="0 0 36 36"><path fill="#000" fill-rule="evenodd" d="M3.25 6.25h29.5v7h-.5c-2.274 0-4 1.726-4 4s1.726 4 4 4h.5v7H3.25v-22m1 1v20h27.5v-5.023c-2.578-.24-4.5-2.32-4.5-4.977s1.922-4.738 4.5-4.977V7.25H4.25m6.246 2.996a1.75 1.75 0 1 0 0 3.5 1.75 1.75 0 0 0 0-3.5m-2.75 1.75a2.75 2.75 0 1 1 5.5 0 2.75 2.75 0 0 1-5.5 0M14.75 22.5a1.75 1.75 0 1 1 3.5 0 1.75 1.75 0 0 1-3.5 0m1.75-2.75a2.75 2.75 0 1 0 0 5.5 2.75 2.75 0 0 0 0-5.5m4.104-8.897-13.5 13.5-.708-.707 13.5-13.5zM24.25 7.5v.487h1V7.5zm0 1.462v.975h1v-.975zm0 1.95v.975h1v-.975zm0 1.95v.975h1v-.975zm0 1.95v.975h1v-.975zm0 1.95v.975h1v-.975zm0 1.95v.975h1v-.975zm0 1.95v.975h1v-.975zm0 1.95v.975h1v-.975zm0 1.95v.975h1v-.975zm0 1.95V27h1v-.488z" clip-rule="evenodd"/></svg>
+                        <div class="text">
+                            <h2>Snow'n'Rail</h2>
+                            <p>Hit the slopes from up to 50% less.</p>
+                        </div>
+                        <button  class="buy-btn">Buy</button>
+                    </div>
+                    <div class="items">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="none" viewBox="0 0 36 36"><path fill="#000" fill-rule="evenodd" d="m18 3.67.475 1.422 2.886 8.658h9.346l-1.15.895-6.467 5.03 2.883 8.36.48 1.391-1.228-.81L18 23.85l-7.224 4.767-1.228.81.48-1.39 2.883-8.36-6.468-5.031-1.15-.895h9.347l2.886-8.658zm0 3.161-2.525 7.577-.114.342H8.208l5.6 4.356.281.22-.116.337-2.52 7.308 6.272-4.138.275-.182.276.182 6.272 4.139-2.52-7.309-.117-.338.282-.22 5.6-4.355H20.64l-.114-.342z" clip-rule="evenodd"/></svg>
+                        <div class="text">
+                            <h2>Currency exchange</h2>
+                            <p>For over 100 countries: online and at the SBB Travel centre.</p>
+                        </div>
+                        <button  class="buy-btn">Buy</button>
+                    </div>
+
+              
+                </div>
+
+                <div class="flex-2">
+                   <div class="item">
+                        <div class="text">
+                            <h1>GA</h1>
+                            <p>Enjoy unlimited travel with the GA Travelcard.</p>
+                        </div>
+                        <button class="cards-btn">Overview of all GA Travelcards</button>
+                   </div>
+                    <div class="item">
+                        <div class="text text2">
+                            <h1>Half Fare</h1>
+                            <p>Travel with half price with the Half Fare Travelcard.</p>
+                        </div>
+                        <button class="cards-btn btn2">Buy a Half Fare Travelcard</button>
+                   </div>
+                </div>
+           
+                
+            </div>
+        </div>
+        <div class="btn">
+            <button class="tickets-btn"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="#ffffff" fill-rule="evenodd" d="M3 3v3h1V3.996h1v-1H3zm0 4.996h2.001v-1H3zM10 5H8.999v-1H10zm1.001 0h1v-2h-1zM6 2.997h3v1H7V5H5V4h1V2.997m7.001 2h2v-1h1v1h1v-2h-2v1h-2zM4 17H3v-2h1zm-1-6.002h1V10h1.001V9H4v.998H3zm1 2H3v-1.002h1V11h1.001v1H4zM5.001 14H4v-1h1.001zM11 16.997h6v-6h-6zm1-1h4v-4h-4zm3-1h-2v-2h2zm-8.001-3h2v-.999H10v-1H8.999v1h-2zm7.002-1.999V10h-1v-.002h-1v-1h1V8h1v1.998m7 3.002h-1v.998h-2v1h2V14h1zm-1-2h1v1h-1v.998h-2v-1h2zm-9.002-2V7.998h2.002v-1h-3V7H10v1H9v1zM16 9h-1V7h1v1.998h1v1h-1zm4.001 8h1v-2h-1zM9 7.996H8V10H7V6.996h2zM12 21.001h1.001v-1h-1.001zm-4.002 0h-1v-2.002h1zm2-4.003H9V17H8v1h1v.998h2.002v-1h-1zm4.003 2h-2.001v-1h2.001zm5.999 2h1v-1h-1zm-12.002-6h-1v-1h1V13H10v1H7.999zm-1 2h1V16H10v-1H7.999v.998h-1zm14.002-8h-1v-1h-1v-1h2v2M8.999 21H11v-1H8.999zm11.002-2.003h-1V18h-1v1.998h1v1h-2v-2h-1v1.003h-1v1h-1v-2h1v-1l3-.003V16h1v1.998h1zm-2-7.998V9l-1-.002v-1h2v2h1v1z" clip-rule="evenodd"/></svg> My tickets</button>
+            <button class="offers-btn">All offers</button>
+        </div>
+    </div>
+</main>
+
+    <div class="part3">
+        <section class="information-inspration">
+            <h1>Information and inspiration.</h1>
+            <div class="grid">
+                <ul>
+                    <li>
+                        <img src="static/media/Jungfrau-Region-Ski.jpg" alt="" width="100px" height="100px">
+                        <div class="words">
+                            <h3>Winter offers.</h3>
+                            <p>Fun in the snow for all.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="static/media/ST-Flims-Caumasee.jpg" alt="" width="100px" height="100px">
+                        <div class="words">
+                            <h3>3, 4, 8 days in Switzerland.</h3>
+                            <p>The best trains, routes & places.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="static/media/Regenschirm-Kinder.jpg" alt="" width="100px" height="100px">
+                        <div class="words">
+                            <h3>Reflective children's umbrella.</h3>
+                            <p>Travel safely and stay dry.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="static/media/gepaeck-special-winter.jpg" alt="" width="100px" height="100px">
+                        <div class="words">
+                            <h3>Skis, snowboards & more.</h3>
+                            <p>Thanks to the ski bag.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="static/media/Therme-Zurzach.jpg" alt="" width="100px" height="100px">
+                        <div class="words">
+                            <h3>Spas.</h3>
+                            <p>Relaxing offers.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="static/media/Tiger-Zoo-Zuerich.jpg" alt="" width="100px" height="100px">
+                        <div class="words">
+                            <div class="badge">Paid content</div>
+                            <h3>Animal'n'Rail Zurich Zoo.</h3>
+                            <p>Up to 30% descount.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <div class="relative">
+        <section class="hero-teaser">
+            <div class="bg-image">
+                
+                <div class="trnsformed-container">
+                    <p>Leisure Pass: 10 travel days, 1000 opportunities.</p>
+
+                    <a href="#">Find out more <i class="fa-solid fa-angle-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="cta">
+        <div class="container">
+            <h1>Help & Contact.</h1>
+            <div class="links">
+                <a href="#">Refunds and compensation</a>
+                <a href="#">Lost and found office</a>
+                <a href="#">SwissPass</a>
+                <a href="#">My travelcards</a>
+                <a href="#">My tickets</a>
+            </div>
+            <button class="help-button">All help topic</button>
+        </div>
+
+        <div class="container">
+            <h1>More SBB.</h1>
+            <div class="links">
+                <a href="#">Jobs and careers</a>
+                <a href="#">Business customer</a>
+                <a href="#">Company</a>
+                <a href="#">SBB News</a>
+                <a href="#">SBB Community</a>
+            </div>
+        </div>
+
+        <div class="container">
+            <h1>Newsletter.</h1>
+            <div class="links">
+                <a href="#">Monthly info and offers from SBB.</a>
+
+            </div>
+            <button class="cta-button">Subsribe now</button>
+        </div>
+
+        <div class="container">
+        <div class="analogue-clock">
+    <svg class="clock" viewBox="0 0 200 200">
+        <!-- Clock face -->
+        <circle cx="100" cy="100" r="95" class="clock-face" />
+
+        <!-- Hour hand -->
+        <line x1="100" y1="100" x2="100" y2="55" class="hour-hand" />
+
+        <!-- Minute hand -->
+        <line x1="100" y1="100" x2="100" y2="40" class="minute-hand" />
+
+        <!-- Second hand -->
+        <line x1="100" y1="105" x2="100" y2="30" class="second-hand" />
+
+        <!-- Center dot -->
+        <circle cx="100" cy="100" r="4" class="center-dot" />
+    </svg>
+</div>
+
+
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="cta-links">
+            <a href="#">Imprint</a>
+            <a href="#">Legal information</a>
+            <a href="#">Data protection</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Cookie settings</a>
+        </div>
+    </footer>
+
+        <script src="static/js/clock.js"></script>
+    </body>
+</html>

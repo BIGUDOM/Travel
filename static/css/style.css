@@ -1,0 +1,806 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background:#ffffff;
+    color: #0b1020;
+    overflow-x: hidden;
+}
+
+header {
+    height: 140px;
+    padding: 0 98px;
+    background: #ffffff;
+    backdrop-filter: blur(16px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.12);
+}
+
+header .menu-toggle{
+    background: transparent;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    font-weight: bold;
+       height: 60px;
+    width: 150px;
+}
+
+
+header .menu-toggle i{
+    font-size: 30px;
+}
+
+.menu-toggle:hover {
+    background-color: #f4f4f4;
+    border-radius: 40px;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.logo img {
+    height: 30px;
+    width:80px;
+
+}
+
+/* HEADER ACTIONS */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+
+.icon-btn {
+    color: #0b1020;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.25s ease;
+    font-weight: 600;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    justify-content: space-between;
+        height: 60px;
+    width: 160px;
+}
+
+.icon-btn:hover {
+    background-color: #f4f4f4;
+    border-radius: 40px;
+
+}
+
+
+.random {
+    height: 170px;
+    background-color: rgb(218, 0, 0);
+}
+
+.from-to-container{
+    height: 170px;
+    width: 950px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 65px rgba(0, 0, 0, 0.35);
+    padding: 10px;
+    padding-top: 30px;
+    position: relative;
+    left: 300px;
+    bottom: 120px;
+    display: flex;
+}
+
+.location-line svg{
+    size: 10px;
+}
+
+.from-to {
+    display: flex;
+    flex-direction: column;
+    gap: 28pxs;
+}
+
+.from-field {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.from-field {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 800px;
+}
+/* Header row: label + cancel */
+.field-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Label */
+.field-header label {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #858585;
+}
+
+/* Cancel button (hidden by default) */
+.cancel-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    opacity: 0;
+    transform: translateY(-4px);
+    pointer-events: none;
+
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.cancel-btn i {
+    font-size: 30px;
+    color: #bdbdbd;
+}
+
+/* Input (collapsed by default) */
+.from-field input {
+    width: 100%;              /* IMPORTANT FIX */
+    height: 15px;
+    padding: 6px 8px;
+    font-size: 1rem;
+
+    border: none;
+    border-bottom: 1px solid #898989;
+    outline: none;
+    box-shadow: none;
+
+    transition:
+        height 0.25s ease,
+        padding 0.25s ease,
+        border-bottom-color 0.25s ease;
+}
+
+/* EXPANDED STATE */
+.from-field:focus-within input {
+    height: 48px;
+    padding: 10px 8px;
+    border-bottom-color: rgb(0, 0, 0);
+}
+
+/* Show cancel button when active */
+.from-field:focus-within .cancel-btn {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+
+.to-field input {
+    width: 100%;              /* IMPORTANT FIX */
+    height: 15px;
+    padding: 6px 8px;
+    font-size: 1rem;
+
+    border: none;
+    border-bottom: 1px solid transparent;
+    outline: none;
+    box-shadow: none;
+
+    transition:
+        height 0.25s ease,
+        padding 0.25s ease,
+        border-bottom-color 0.25s ease;
+}
+
+/* EXPANDED STATE */
+.to-field:focus-within input {
+    height: 48px;
+    padding: 10px 8px;
+    border-bottom-color: rgb(0, 0, 0);
+}
+
+/* Show cancel button when active */
+.to-field:focus-within .cancel-btn {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+
+.swap {
+    height: 70px;
+    width: 70px;
+    position: relative;
+    right: 100px;
+    top: 15px;
+    border: none;
+    border-radius: 100px;
+    background-color: #ffffff;
+    box-shadow:0 0 5px rgba(0, 0, 0, 0.35);
+}
+.swap:hover{
+      transform: translateY(-6px) scale(1.03);
+}
+
+.content1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    left: 300px;
+    bottom: 100px;
+}
+
+.first {
+    color: #5f5f5f;
+    font-size: 25px;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+.first:hover{
+    color: rgb(220, 0, 0);
+}
+
+.offers {
+    display: flex;
+    flex-direction: column;
+    padding: 10px clamp(20px, 6vw, 100px);
+    gap: 50px;
+}
+
+.top-offers {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.top-offers h1 {
+    font-size: 45px;
+}
+
+/* Layout row */
+.flex {
+    display: flex;
+    gap: 30px;
+}
+
+/* Column */
+.flex-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Offer card */
+.flex-1 .items {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    min-height: 140px;
+    padding: 24px 28px;
+
+    background-color: #e3e3e3;
+    border-radius: 10px;
+}
+
+
+.flex-1 .items:hover{
+      transform: translateY(-6px) scale(1.03);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+        background-color: #f0f0f0;
+}
+
+/* Icon */
+.flex-1 .items svg {
+    height: 80px;
+    width: auto;
+    flex-shrink: 0;
+}
+
+/* Text container */
+.flex-1 .items .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    flex: 1;
+    max-width: 410px; /* key line-length control */
+}
+
+/* Title */
+.flex-1 .items .text h2 {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.flex-1 .items .text p {
+    font-size: 20px;
+    line-height: 1.5;
+    color: #333;
+}
+
+
+/* Button */
+.buy-btn {
+    align-self: flex-start;
+
+    padding: 10px 22px;
+    height: auto;
+    width: 100px;
+
+    border-radius: 999px;
+    font-size: 16px;
+    font-weight: 600;
+
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+
+    position: relative;
+    top: 30px;
+}
+
+
+/* Column */
+.flex-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.flex-2 .item{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+
+    min-height: 330px;
+    padding: 24px 28px;
+    width: 700px;
+
+    background-color: #e3e3e3;
+    border-radius: 10px;
+}
+.flex-2 .item:hover{
+      transform: translateY(-6px) scale(1.03);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+        background-color: #f0f0f0;
+}
+
+.flex-2 .item .text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    flex: 1;
+    max-width: 350px; /* key line-length control */
+}
+
+
+.item .text h1{
+    font-size: 70px;
+    font-weight: bolder;
+}
+
+.item .text p {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.flex-2 .item .text2 {
+    max-width: 400px;
+}
+
+.badge{
+    height: 30px;
+    width: 130px;
+    padding: 5px;
+    padding-left: 20px;
+    border-radius: 20px;
+    background-color: black;
+    color: #ffffff;
+}
+
+.cards-btn {
+    width: 350px;
+    height: 50px;
+
+    border-radius: 999px;
+    font-size: 16px;
+    font-weight: 600;
+
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+
+    position: relative;
+    top: 80px;
+}
+
+.btn2{
+    width: 250PX;
+}
+
+.btn{
+    display: flex;
+    gap: 20px;
+}
+
+.tickets-btn {
+    width: 230px;
+    height: 60px;
+
+    border-radius: 999px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+
+    border: none;
+    background-color: #e20000;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.25);
+    cursor: pointer;
+
+}
+
+.tickets-btn:hover{
+    transform: translateY(-3px) scale(1);
+    background-color: rgb(163, 0, 0);
+}
+
+.offers-btn{
+    width: 170px;
+    height: 60px;
+
+    border-radius: 999px;
+    font-size: 20px;
+    font-weight: 600;
+
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+
+
+}
+
+.offers-btn:hover{
+    transform: translateY(-3px) scale(1);
+}
+
+.part3{
+    display: flex;
+    flex-direction: column;
+}
+
+.information-inspration{
+    display: flex;
+    flex-direction: column;
+    padding: 70px clamp(20px, 6vw, 100px);
+    gap: 70px;
+}
+
+.information-inspration h1{
+    font-size: 50px;
+}
+
+.grid{
+    display: grid;
+}
+
+.grid ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.grid ul li {
+    display: flex;
+    gap: 20px;
+}
+
+.grid ul li img {
+    height: 100px;
+    width: 150px;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.grid ul li img:hover{
+    opacity: 0.9;
+    transform:scale(1.1);
+}
+
+
+.words {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self:center;
+    gap: 5;
+}
+
+.words h3 {
+    font-size: 25px;
+}
+
+.words p {
+    font-size: 20px;
+}
+
+.hero-teaser{
+    display: flex;
+    flex-direction: column;
+    padding: 70px 0;
+    background: url(/flight\ ticket/static/media/Freizeitpass_Kampagne_Mann.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+
+}
+
+.cta{
+    display: flex;
+    flex-direction: row;
+    padding: 70px clamp(20px, 6vw, 100px);
+    gap: 170px;
+    background-color: #eeeeee;
+    margin-top: 70px;
+    border-bottom: 1px solid black;
+}
+
+.cta .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container .links {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #5f5f5f;
+    font-weight: 500;
+}
+
+.links a:hover{
+    text-decoration: underline;
+    text-underline-offset: 10px;
+
+    color: rgb(226, 0, 0);
+}
+
+.help-button {
+        width: 230px;
+    height: 60px;
+
+    border-radius: 999px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+
+    border: none;
+    background-color: #e20000;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.25);
+    cursor: pointer;
+}
+
+.help-button:hover{
+    transform: translateY(-3px) scale(1);
+    background-color: rgb(163, 0, 0);
+}
+
+
+.cta-button{
+        width: 170px;
+    height: 60px;
+
+    border-radius: 999px;
+    font-size: 20px;
+    font-weight: 600;
+
+    border: none;
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+}
+.cta-button:hover{
+    transform: translateY(-3px) scale(1);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    padding: 70px clamp(20px, 6vw, 100px);
+    background-color: #eeeeee ;
+}
+
+.cta-links {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.cta-links a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #5f5f5f;
+    font-weight: 500;
+}
+
+.cta-links a:hover{
+    border-bottom: 2px solid rgb(226, 0, 0);
+
+    color: rgb(226, 0, 0);
+}
+
+.analogue-clock {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock {
+    width: 100%;
+    height: 100%;
+}
+
+.clock-face {
+    fill: #ffffff;
+    stroke: #111;
+    stroke-width: 4;
+}
+
+.hour-hand,
+.minute-hand,
+.second-hand {
+    stroke-linecap: round;
+    transform-origin: 50% 50%;
+    transition: transform 0.2s ease-out;
+}
+
+.hour-hand {
+    stroke: #111;
+    stroke-width: 6;
+}
+
+.minute-hand {
+    stroke: #111;
+    stroke-width: 4;
+}
+
+.second-hand {
+    stroke: #e63946;
+    stroke-width: 2;
+}
+
+.center-dot {
+    fill: #111;
+}
+
+
+@media (max-width:900px) {
+
+    header {
+    padding: 0 20px;
+
+    }
+
+    .header-actions {
+        gap: 5px;
+    }
+
+    .icon-btn {
+
+        height: 50px;
+        width: 50px;
+    }
+
+    .icon-btn span{
+        display: none;
+    }
+
+    header .menu-toggle {
+        width: 60px;
+    }
+
+    .menu-toggle span{
+        display: none;
+    }
+
+    .from-to-container{
+        width: 550px;
+        position: relative;
+        left: 40px;
+    }
+
+    .from-field {
+        width: 420px;
+    }
+
+    .swap {
+        height: 50px;
+        top: 20px;
+    }
+
+    .content1 {
+        position: relative;
+        left: 100px;
+    }
+
+    .flex {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .flex-2 .item{
+        width: 550px;
+    }
+
+    .item .text h1{
+        font-size: 50px;
+    }
+
+    .item .text p {
+        font-size: 25px;
+    }
+
+    .grid ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-teaser{
+        width: 100%;
+    }
+
+    .cta{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    }
+
+    .cta-links{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+
+}
